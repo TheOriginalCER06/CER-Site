@@ -16,16 +16,11 @@
 
         <h1>Test</h1>
         <p>This is the fully working site (when it is done) (:</p>
-        <p>It is currently <input type="text" id="clock" value="" size="14" readonly></p>
-        <img class="image" style="display: block;"
+        <p>Tiden er nå: <span id="clock"></span></p>
+        <img class="meme" style="display: block;"
         src="./meme.jpg" alt="Meme" width="490" height="520">
         <script src="" async defer></script>
-        <script type="text/javascript">
-            var clock = document.getElementById('clock');
-            var timer = setInterval(function() {
-                clock.value = new Date().toTimeString();
-            }, 1000);
-        </script>
+        <script type="text/javascript" src="./time-id_clock.js" async defer></script>
 
     </body>
 </html>
