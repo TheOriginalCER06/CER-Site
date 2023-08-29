@@ -1,15 +1,13 @@
 /* add bold version from file ./fonts/comicsans_bold.ttf*/
 @font-face {
+    font-family: "comicsans";
+    src: url("./fonts/comicsans.ttf");
+}
+@font-face {
     font-family: "comicsans_bold";
     src: url("./fonts/comicsans_bold.ttf");
     font-weight: bold;
 }
-@font-face {
-    font-family: "comicsans";
-    src: url("./fonts/comicsans.ttf");
-}
-
-
 
 body { /* tag */ /*centered everything*/
     background-color: rgb(0, 255, 0);
