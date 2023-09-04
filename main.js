@@ -4,10 +4,6 @@
 var ip_pos = document.getElementById('ip');
 ip_pos.innerHTML = window.location.hostname;
 
-//get navbar from navbar.html and place into div with navbar class in every page where this div is
-$(function(){
-    $("#navbar").load("nav.html");
-  });
 
 //Klokken
 var clock_pos = document.getElementById('clock');
