@@ -3,27 +3,43 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Test</title>
+        <title>CER Site</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
-    <body class="background">
+    <body>
+        <div class="background">
         <!--[if lt IE 7]>
             <p class="browsehappy" lang="en">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1>Test</h1>
-        <p>Denne siden er foreløpig bare en test-side (:</p>
-        <p>IP-addresse: <a href="./index.html" rel="external" id="ip">Henter serveren sin IP...</a></p>
-        <p>Tiden er nå: <span id="clock"></span></p>
-        <p>Her er et bilde av en god meme:</p>
-        <img class="meme" style="display: block;"
-        src="./pictures/meme.jpg" alt="Meme">
-        <p>Her er et bilde av meg:</p>
-        <img class="bilde" style="display: block;"
-        src="./pictures/meg.jpg" alt="Meme">
-        <script src="" async defer></script>
-        <script type="text/javascript" src="./main.js" async defer></script>
+        </div>
+        <div class="header">
+            <h1>Test</h1>
+        </div>
+        
+        <div class="navbar">
+            <a href="./index.html">Hjem</a>
+            <a href="./pages/om.html">Om</a>
+            <a href="./pages/kontakt.html">Kontakt</a>
+            <a href="./pages/prosjekter.html">Prosjekter</a>
+            <a href="./pages/oppgaver.html">Oppgaver</a>
+        </div>
 
+        <div>
+            <p>Denne siden er foreløpig bare en test-side (:</p>
+            <p>IP-addresse: <a href="./index.html" rel="external" id="ip">Henter serveren sin IP...</a></p>
+            <p>Tiden er nå: <span id="clock"></span></p>
+
+            <p>Her er et bilde av en god meme:</p>
+            <img class="meme" style="display: block;" src="./pictures/meme.jpg" alt="Meme">
+
+            <p>Her er et bilde av meg:</p>
+            <img class="bilde" style="display: block;" src="./pictures/meg.jpg" alt="Meme">
+        </div>
+        <div class="footer">
+            <p>Denne siden er laget av Chrsitian!</p>
+        </div>
+            <script type="text/javascript" src="./main.js" async defer></script>
     </body>
 </html>

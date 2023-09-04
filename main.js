@@ -5,3 +5,7 @@ var timer = setInterval(function() {
 }, 1000);
 var ip_pos = document.getElementById('ip');
 ip_pos.innerHTML = window.location.hostname;
+
+//get navbar from navbar.html
+var nav_pos = document.getElementsByClassName('navbar');
+nav_pos.innerHTML = $("#navbar").load("navbar.html");

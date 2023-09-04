@@ -19,13 +19,7 @@ body { /* tag */ /*centered everything*/
     padding: 0px;
 }
 h1 { /* tag */
-    color: rgb(255, 0, 0);
-    font-size: 50px;
-    font-family: "comicsans_bold";
-    text-decoration: underline;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
 }
 p { /* tag */
     color: rgb(255, 0, 255);
@@ -60,4 +54,22 @@ p { /* tag */
 .ip {
     color : rgb(0, 0, 0);
     font-size: 20px;
+}
+.header{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    font-family: "comicsans_bold";
+    text-decoration: underline;
+    
+    margin: 0px;
+    padding: 0px;
+}
+.footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
