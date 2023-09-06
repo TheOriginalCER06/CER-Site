@@ -6,16 +6,22 @@
 //get the name of the file and create a link to the file
 //use supported protocol schemes: http, data 
 
-//This function is run when the document is loaded
+
+//remove every item that does not include .html
 $(document).ready(function() {
-    //get the files in the folder ./oppgaver
-    $.get('./oppgaver', function(data) {
-        //for each file in the folder
-        $(data).find("a").each(function() {
-            //get the name of the file
-            var filename = this.href.replace(window.location.host, "").replace("http:///", "");
-            //create a link to the file
-            $("#list_oppg").append("<li><a href='" + filename + "'>" + filename + "</a></li>");
+    $.ajax('./oppgaver/').done(function(data) {
+        var file_list = $(data).find('a');
+        file_list.each(function(index) {
+            var file = $(this).attr('href');
+            var file_name = file.split('/');
+            file_name = file_name[file_name.length - 1];
+            var a = $('<a/>', {
+                text: file_name,
+                href: file,
+                target: '_blank',
+                class: 'list-group-item list-group-item-action'
+            });
+            $('#list_oppg').append(a);
         });
     });
 });
