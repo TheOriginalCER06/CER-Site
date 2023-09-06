@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../style.css">
 
     </head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <body>
         <div class="background">
         <!--[if lt IE 7]>
@@ -33,16 +34,9 @@
         <div class="content"> 
             <!--Underneth here the siste should list the size, name as well as a link to each file in the folder ./oppgaver/-->
             <p>Her er en liste over alle oppgavene jeg har gjort i forbindelse med skolearbeid:</p>
-            <ul>
-                <?php
-                $dir = "./oppgaver/";
-                $files = scandir($dir);
-                $files = array_diff($files, array('.', '..'));
-                foreach ($files as $file) {
-                    echo "<li><a href='$dir$file'>$file</a></li>";
-                }
-                ?>
-            </ul>
+            <div id="list_oppg">
+            </div>
+            <script type="text/javascript" src="./oppgaver.js" async defer></script>
         </div>
         <script type="text/javascript" src="../main.js" async defer></script>
 

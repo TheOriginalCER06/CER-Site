@@ -4,7 +4,6 @@
 var ip_pos = document.getElementById('ip');
 ip_pos.innerHTML = window.location.hostname;
 
-
 //Klokken
 var clock_pos = document.getElementById('clock');
 var timer = setInterval(function() {
