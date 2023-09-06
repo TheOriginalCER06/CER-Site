@@ -118,7 +118,7 @@ nav {
     color:  var(--text1);
   }
 
-#navbar_hover > li > a:hover{
+#navbar_hover li a:hover{
     color: var(--bg);
     text-decoration: none;
   }
