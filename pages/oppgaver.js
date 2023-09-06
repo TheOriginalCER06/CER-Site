@@ -7,7 +7,7 @@
 //use supported protocol schemes: http, data 
 
 
-//remove every item that does not include .html and correct dir to link
+//remove every item that does not include .html and correct dir to link (./oppgaver/FILE)
 $(document).ready(function() {
     $.ajax('./oppgaver/').done(function(data) {
 
@@ -15,13 +15,16 @@ $(document).ready(function() {
 		file_list = file_list.filter(function() {
 			return $(this).attr('href').match(/\.html$/);
 		});
+
         file_list.each(function(index) {
             var file = $(this).attr('href');
             var file_name = file.split('/');
+
             file_name = file_name[file_name.length - 1];
+
             var a = $('<a/>', {
                 text: file_name,
-                href: file,
+                href: "./" + file,
                 target: '_blank',
                 class: 'oppgave_link'
             });

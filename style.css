@@ -93,11 +93,10 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-.oppgave_link {
+.oppgave_link { /* list items at center of screen */
     list-style: none;
-    font-weight: bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0px;
     padding: 0px;
