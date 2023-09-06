@@ -13,6 +13,7 @@
     --text1: #CEDEBD;
     --highlight: #FAF1E4;
     --text2: #9EB384;
+    --link: #300090;
 }
 html {
     box-sizing: border-box;
@@ -45,7 +46,7 @@ p { /* tag */
 #clock {  /* id */ /*set to bold text*/
     color: var(--text1);
     size: 120%;
-    font-weight: bold;
+    font-weight: bold;      
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -64,16 +65,14 @@ p { /* tag */
     border-radius: 10px;
     border: 5px solid var(--highlight);
 }
-.ip {
-    color : var(--highlight);
-    font-size: 20px;
+#ip {
+    color : var(--link);
+    text-decoration-thickness: from-font;
 }
 .header{
     color: var(--text1);
     font-size: 25px;
-    font-family: "comicsans_bold";
     text-decoration: none;
-    
     margin: 0px;
     padding: 0px;
 }
