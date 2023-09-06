@@ -8,6 +8,12 @@
     /* src: url("./fonts/comicsans_bold.ttf"); */
     /* font-weight: bold; */
 /* } */
+:root {
+    --bg: #435334;
+    --text1: #CEDEBD;
+    --highlight: #FAF1E4;
+    --text2: #9EB384;
+}
 html {
     box-sizing: border-box;
   }
@@ -18,7 +24,7 @@ html {
     padding: 0;
   }
 body { /* tag */ /*centered everything*/
-    background-color: black;
+    background-color: var(--bg);
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
@@ -29,7 +35,7 @@ h1 { /* tag */
     text-align: center;
 }
 p { /* tag */
-    color: whitesmoke;
+    color: var(--text2);
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -37,7 +43,7 @@ p { /* tag */
     padding: 0px;
 }
 #clock {  /* id */ /*set to bold text*/
-    color: cornsilk;
+    color: var(--text1);
     size: 120%;
     font-weight: bold;
     text-align: center;
@@ -46,7 +52,7 @@ p { /* tag */
 }
 .meme { /* class */
     align-self: center;
-    border: 5px solid black;
+    border: 5px solid var(--highlight);
     border-radius: 10px;
     margin: auto;
     padding: 0px;
@@ -56,14 +62,14 @@ p { /* tag */
     margin: auto;
     padding: 0px;
     border-radius: 10px;
-    border: 5px solid black;
+    border: 5px solid var(--highlight);
 }
 .ip {
-    color : rgb(0, 0, 0);
+    color : var(--highlight);
     font-size: 20px;
 }
 .header{
-    color: darkgrey;
+    color: var(--text1);
     font-size: 25px;
     font-family: "comicsans_bold";
     text-decoration: none;
@@ -77,7 +83,7 @@ p { /* tag */
     bottom: 0;
     width: 100%;
 
-    color: rgb(255, 255, 255);
+    color: var(--text1);
     text-align: center;
 }
 nav {
@@ -89,7 +95,7 @@ nav {
     align-items: center;
 }
 .navbar_logo { /* id */
-    color: white;
+    color: var(--text1);
     font-size: 25px;
     font-weight: bold;
     text-decoration: none;
@@ -109,13 +115,14 @@ nav {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
-    color: white;
+    color:  var(--text1);
   }
-  .navbar-item:hover {
-    background-color: white;
-    color: black;
+
+#navbar_hover > li > a:hover{
+    color: var(--bg);
+    text-decoration: none;
   }
-  .navbar-item:hover a {
-    color: white;
-    background-color: black;
+#navbar_hover li:hover{
+    background-color: var(--text1);
+    text-decoration: none;
   }
