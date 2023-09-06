@@ -7,10 +7,14 @@
 //use supported protocol schemes: http, data 
 
 
-//remove every item that does not include .html
+//remove every item that does not include .html and correct dir to link
 $(document).ready(function() {
     $.ajax('./oppgaver/').done(function(data) {
+
         var file_list = $(data).find('a');
+		file_list = file_list.filter(function() {
+			return $(this).attr('href').match(/\.html$/);
+		});
         file_list.each(function(index) {
             var file = $(this).attr('href');
             var file_name = file.split('/');
@@ -19,7 +23,7 @@ $(document).ready(function() {
                 text: file_name,
                 href: file,
                 target: '_blank',
-                class: 'list-group-item list-group-item-action'
+                class: 'oppgave_link'
             });
             $('#list_oppg').append(a);
         });

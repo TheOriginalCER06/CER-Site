@@ -93,6 +93,16 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.oppgave_link {
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    color: var(--link);
+}
 .navbar_logo { /* id */
     color: var(--text1);
     font-size: 25px;
@@ -125,3 +135,4 @@ nav {
     background-color: var(--text1);
     text-decoration: none;
   }
+
