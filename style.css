@@ -1,20 +1,27 @@
 /* add bold version from file ./fonts/comicsans_bold.ttf*/
-@font-face {
-    font-family: "comicsans";
-    src: url("./fonts/comicsans.ttf");
-}
-@font-face {
-    font-family: "comicsans_bold";
-    src: url("./fonts/comicsans_bold.ttf");
-    font-weight: bold;
-}
-
+/* @font-face { */
+    /* font-family: "comicsans"; */
+    /* src: url("./fonts/comicsans.ttf"); */
+/* } */
+/* @font-face { */
+    /* font-family: "comicsans_bold"; */
+    /* src: url("./fonts/comicsans_bold.ttf"); */
+    /* font-weight: bold; */
+/* } */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
 body { /* tag */ /*centered everything*/
-    background-color: rgb(0, 255, 0);
+    background-color: black;
     text-align: center;
-    font-family: "comicsans";
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    color: rgb(0, 0, 0);
     margin: 0px;
     padding: 0px;
 }
@@ -22,7 +29,7 @@ h1 { /* tag */
     text-align: center;
 }
 p { /* tag */
-    color: rgb(255, 0, 255);
+    color: whitesmoke;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -30,7 +37,7 @@ p { /* tag */
     padding: 0px;
 }
 #clock {  /* id */ /*set to bold text*/
-    color: rgb(0, 0, 0);
+    color: cornsilk;
     size: 120%;
     font-weight: bold;
     text-align: center;
@@ -56,10 +63,10 @@ p { /* tag */
     font-size: 20px;
 }
 .header{
-    color: rgb(255, 0, 0);
+    color: darkgrey;
     font-size: 25px;
     font-family: "comicsans_bold";
-    text-decoration: underline;
+    text-decoration: none;
     
     margin: 0px;
     padding: 0px;
@@ -73,3 +80,42 @@ p { /* tag */
     color: rgb(255, 255, 255);
     text-align: center;
 }
+nav {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_logo { /* id */
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar_links { /* id */
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar_item a { /* class */
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar-item:hover {
+    background-color: white;
+    color: black;
+  }
+  .navbar-item:hover a {
+    color: white;
+    background-color: black;
+  }

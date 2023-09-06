@@ -15,20 +15,34 @@
             <p class="browsehappy" lang="en">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         </div>
-        <div id="navbar" class="navbar">
-            <a href="../index.html">Hjem</a>
-            <a href="om.html">Om</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="prosjekter.html">Prosjekter</a>
-            <a href="oppgaver.html">Oppgaver</a>
-        </div>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar_logo">CER</a><!--Bytt ut med logo senere-->
+            <ul class="navbar_links">
+                <li class="navbar_item"><a href="../index.html">Hjem</a></li>
+                <li class="navbar_item"><a href="./om.html">Om</a></li>
+                <li class="navbar_item"><a href="./kontakt.html">Kontakt</a></li>
+                <li class="navbar_item"><a href="./prosjekter.html">Prosjekter</a></li>
+                <li class="navbar_item"><a href="./oppgaver.html">Oppgaver</a></li>
+            </ul>
+        </nav>
         <div class="header">
             <h1>Oppgaver (skolearbeid)</h1>
         </div>
 
 
-        <div class="content">
-            <p>INNHOLD HER</p>
+        <div class="content"> 
+            <!--Underneth here the siste should list the size, name as well as a link to each file in the folder ./oppgaver/-->
+            <p>Her er en liste over alle oppgavene jeg har gjort i forbindelse med skolearbeid:</p>
+            <ul>
+                <?php
+                $dir = "./oppgaver/";
+                $files = scandir($dir);
+                $files = array_diff($files, array('.', '..'));
+                foreach ($files as $file) {
+                    echo "<li><a href='$dir$file'>$file</a></li>";
+                }
+                ?>
+            </ul>
         </div>
         <script type="text/javascript" src="../main.js" async defer></script>
 
