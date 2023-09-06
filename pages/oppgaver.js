@@ -24,7 +24,7 @@ $(document).ready(function() {
 
             var a = $('<a/>', {
                 text: file_name,
-                href: "./" + file,
+                href: "./oppgaver/" + file,
                 target: '_blank',
                 class: 'oppgave_link'
             });
