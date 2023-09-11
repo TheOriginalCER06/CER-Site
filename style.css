@@ -45,7 +45,6 @@ p { /* tag */
 }
 #clock {  /* id */ /*set to bold text*/
     color: var(--text1);
-    size: 120%;
     font-weight: bold;      
     text-align: center;
     margin: 0px;
