@@ -49,6 +49,7 @@ p { /* tag */
     text-align: center;
     margin: 0px;
     padding: 0px;
+    font-size: 20px;
 }
 .meme { /* class */
     align-self: center;
