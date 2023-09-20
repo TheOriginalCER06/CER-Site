@@ -13,8 +13,8 @@
     --text1: #CEDEBD;
     --highlight: #FAF1E4;
     --text2: #9EB384;
-    --link: #ff300090;
-    --link-highlight: #6030b0;
+    --link: #300090;
+    --link-highlight: #3098b0;
 }
 html {
     box-sizing: border-box;
@@ -74,6 +74,9 @@ p { /* tag */
 }
 #ip:visited {
     color : var(--link);
+}
+#ip:visited:hover {
+    color : var(--link-highlight);
 }
 .header{
     color: var(--text1);
