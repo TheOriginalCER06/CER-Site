@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: 'list_files.php', // Replace with the path to your PHP script
+        url: 'oppgaver.php', // Replace with the path to your PHP script
         type: 'GET',
         dataType: 'json',
         success: function (data) {
