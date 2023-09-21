@@ -5,8 +5,15 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data) {
             var fileList = '<ul>';
+            
             $.each(data, function (index, file) {
-                fileList += '<li>' + file + '</li>';
+                var a = $('<a/>', {
+                    text: file,
+                    href: "./oppgaver/" + file,
+                    target: '_blank',
+                    class: 'oppgave_link'
+                });
+                fileList += '<li>' + a + '</li>';
             });
             fileList += '</ul>';
             $('#list_oppg').html(fileList);
