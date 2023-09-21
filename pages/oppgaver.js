@@ -4,8 +4,8 @@ $(document).ready(function () {
         type: 'GET',
         dataType: 'json',
         success: function (data) {
-            var fileList = '<ul>';
-            
+            var fileList = $('<ul>'); // Create a UL element using jQuery
+
             $.each(data, function (index, file) {
                 var a = $('<a/>', {
                     text: file,
@@ -13,10 +13,14 @@ $(document).ready(function () {
                     target: '_blank',
                     class: 'oppgave_link'
                 });
-                fileList += '<li>' + a + '</li>';
+
+                // Create an LI element and append the anchor to it
+                var li = $('<li>').append(a);
+
+                fileList.append(li); // Append the LI to the UL
             });
-            fileList += '</ul>';
-            $('#list_oppg').html(fileList);
+
+            $('#list_oppg').html(fileList); // Append the UL to the div
         },
         error: function (error) {
             console.error('Error:', error);
