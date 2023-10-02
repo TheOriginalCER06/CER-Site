@@ -164,14 +164,7 @@ nav {
     background-color: var(--text1);
     text-decoration: none;
   }
-.graph {
-    align-self: center;
-    margin: auto;
-    padding: 0px;
-    border-radius: 10px;
-    border: 5px solid var(--highlight);
-}
-.force-graph-container {
+canvas {
     align-self: center;
     margin: auto;
     padding: 0px;
