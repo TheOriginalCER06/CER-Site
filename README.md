@@ -22,3 +22,4 @@ If you want to run this project, it works using an Apache server. You can use XA
 
 ## License
 This project is licensed under the MIT License.
+You can read the license [here](LICENSE).
