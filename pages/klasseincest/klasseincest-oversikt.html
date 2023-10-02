@@ -35,7 +35,8 @@
             <div id="graph"></div><!-- https://github.com/vasturiano/force-graph -->
                 <script>
                     fetch('./klasseincest.json').then(res => res.json()).then(data => {
-                    nodes.forEach(node => {
+                    
+                    data.nodes.forEach(node => {
                         node.connections = 0;
                         data.links.forEach(link => {
                             if (link.source == node.id || link.target == node.id) {
