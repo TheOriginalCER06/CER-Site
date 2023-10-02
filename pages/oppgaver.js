@@ -11,7 +11,8 @@ $(document).ready(function () {
                     text: file,
                     href: "./oppgaver/" + file,
                     target: '_blank',
-                    class: 'oppgave_link'
+                    class: 'oppgave_link',
+                    id : "link"
                 });
 
                 // Create an LI element and append the anchor to it
