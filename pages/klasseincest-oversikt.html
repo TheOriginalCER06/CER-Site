@@ -26,13 +26,13 @@
             </ul>
         </nav>
         <div class="header">
-            <h1>TITTEL</h1>
+            <h1>Incest Oversikt</h1>
         </div>
 
 
         <div class="content">
             <script src="https://unpkg.com/force-graph"></script>
-            <div id="graph"></div>
+            <div id="graph"></div><!-- https://github.com/vasturiano/force-graph -->
                 <script>
                     fetch('./klasseincest.json').then(res => res.json()).then(data => {
                       const Graph = ForceGraph()
@@ -44,7 +44,9 @@
                         .nodeAutoColorBy('group')
                         .linkSource('source')
                         .linkTarget('target')
+                        .linkWidth(3)
                     });
+                    Graph.onEngineStop(() => Graph.zoomToFit(400));
             </script>
         </div>
         <script type="text/javascript" src="../main.js" async defer></script>
