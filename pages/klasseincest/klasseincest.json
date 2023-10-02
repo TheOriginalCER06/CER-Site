@@ -32,7 +32,7 @@
         },
         {
             "id":6,
-            "name":"Andreas w",
+            "name":"Andreas W",
             "group": 1,
             "connections": 0
         },
@@ -199,11 +199,6 @@
         },
         {
             "source": 6,
-            "target": 17,
-            "value": 1
-        },
-        {
-            "source": 27,
             "target": 17,
             "value": 1
         },
