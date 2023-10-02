@@ -37,8 +37,8 @@
                     fetch('./klasseincest.json').then(res => res.json()).then(data => {
                     // add random links between nodes
                     for (let i = 0; i < 100; i++) {
-                        const source = Math.floor(Math.random() * (data.nodes.length));
-                        const target = Math.floor(Math.random() * (data.nodes.length));
+                        const source = Math.floor(Math.random() * (data.nodes.length+1));
+                        const target = Math.floor(Math.random() * (data.nodes.length+1));
                         if (source != target) {
                             data.links.push({
                                 source: source,
