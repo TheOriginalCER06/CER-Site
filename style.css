@@ -167,7 +167,4 @@ nav {
 canvas {
     align-self: center;
     margin: auto;
-    padding: 0px;
-    border-radius: 10px;
-    border: 5px solid var(--highlight);
 }
