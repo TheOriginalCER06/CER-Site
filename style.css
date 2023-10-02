@@ -86,16 +86,16 @@ p { /* tag */
     border-radius: 10px;
     border: 5px solid var(--highlight);
 }
-#link {
+.link {
     color : var(--link);
 }
-#link:hover {
+.link:hover {
     color : var(--link-highlight);
 }
-#link:visited {
+.link:visited {
     color : var(--link);
 }
-#link:visited:hover {
+.link:visited:hover {
     color : var(--link-highlight);
 }
 .header{
