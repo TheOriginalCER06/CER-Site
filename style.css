@@ -78,16 +78,16 @@ p { /* tag */
     border-radius: 10px;
     border: 5px solid var(--highlight);
 }
-#ip {
+#link {
     color : var(--link);
 }
-#ip:hover {
+#link:hover {
     color : var(--link-highlight);
 }
-#ip:visited {
+#link:visited {
     color : var(--link);
 }
-#ip:visited:hover {
+#link:visited:hover {
     color : var(--link-highlight);
 }
 .header{
@@ -140,12 +140,7 @@ nav {
     margin: 0px;
     padding: 0px;
 }
-.link {
-    color: var(--link);
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
-}
+
 .navbar_item a { /* class */
     display: inline-block;
     padding: 10px 15px;
