@@ -79,8 +79,9 @@
                           const bckgDimensions = node.__bckgDimensions;
                           bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
                         });
+                        Graph.onEngineStop(() => Graph.zoomToFit(400));
                     });
-                    Graph.onEngineStop(() => Graph.zoomToFit(400));
+                    
             </script>
         </div>
         <div>
