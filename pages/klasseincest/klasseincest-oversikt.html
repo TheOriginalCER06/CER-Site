@@ -35,15 +35,6 @@
             <div id="graph"></div><!-- https://github.com/vasturiano/force-graph -->
                 <script>
                     fetch('./klasseincest.json').then(res => res.json()).then(data => {
-
-                    data.nodes.forEach(node => {
-                        node.connections = 0;
-                        data.links.forEach(link => {
-                            if (link.source == node.id || link.target == node.id) {
-                                node.connections += 1;
-                            }
-                        });
-                    });
                     // add random links between nodes
                     for (let i = 0; i < 100; i++) {
                         const source = Math.floor(Math.random() * (data.nodes.length-1));
@@ -55,6 +46,15 @@
                             });
                         }
                     }
+                    data.nodes.forEach(node => {
+                        node.connections = 0;
+                        data.links.forEach(link => {
+                            if (link.source == node.id || link.target == node.id) {
+                                node.connections += 1;
+                            }
+                        });
+                    });
+                    
                     const Graph = ForceGraph()
                     (document.getElementById('graph'))
                         .height(window.innerHeight*0.8)
