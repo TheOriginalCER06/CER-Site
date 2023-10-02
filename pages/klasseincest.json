@@ -2,21 +2,30 @@
     "nodes": [
         {
             "id": 1,
-            "name": "Albert"
+            "name": "Albert",
+            "group": 1
         },
         {
             "id": 2,
-            "name": "Bert"
+            "name": "Bert",
+            "group": 1
         },
         {
             "id": 3,
-            "name": "Charlie"
+            "name": "Charlie",
+            "group": 2
         }
     ],
-    "edges": [
+    "links": [
         {
-            "from": 1,
-            "to": 2
+            "source": 1,
+            "target": 2,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "value": 1
         }
     ]
 }
