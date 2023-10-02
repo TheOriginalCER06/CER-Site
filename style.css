@@ -88,15 +88,19 @@ p { /* tag */
 }
 .link {
     color : var(--link);
+    text-decoration: none;
 }
 .link:hover {
     color : var(--link-highlight);
+    text-decoration: none;
 }
 .link:visited {
     color : var(--link);
+    text-decoration: none;
 }
 .link:visited:hover {
     color : var(--link-highlight);
+    text-decoration: none;
 }
 .header{
     color: var(--text1);
