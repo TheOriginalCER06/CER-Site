@@ -139,6 +139,11 @@
             "id":28,
             "name":"Øyvår",
             "group": 1
+        },
+        {
+            "id":100,
+            "name":"Ikke i klassen",
+            "group": 2
         }
 
     ],
@@ -165,6 +170,11 @@
         },
         {
             "source": 6,
+            "target": 17,
+            "value": 1
+        },
+        {
+            "source": 27,
             "target": 17,
             "value": 1
         }
