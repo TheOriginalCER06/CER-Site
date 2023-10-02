@@ -35,6 +35,10 @@ body { /* tag */ /*centered everything*/
 }
 h1 { /* tag */
     text-align: center;
+    color: var(--text1);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px;
 }
 p { /* tag */
     color: var(--text2);
@@ -51,6 +55,14 @@ p { /* tag */
     margin: 0px;
     padding: 0px;
     font-size: 20px;
+}
+.subtitle {
+    text-align: center;
+    color: var(--text1);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
 }
 .meme { /* class */
     align-self: center;
@@ -128,7 +140,12 @@ nav {
     margin: 0px;
     padding: 0px;
 }
-
+.link {
+    color: var(--link);
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
 .navbar_item a { /* class */
     display: inline-block;
     padding: 10px 15px;

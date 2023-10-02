@@ -1,0 +1,22 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Albert"
+        },
+        {
+            "id": 2,
+            "name": "Bert"
+        },
+        {
+            "id": 3,
+            "name": "Charlie"
+        }
+    ],
+    "edges": [
+        {
+            "from": 1,
+            "to": 2
+        }
+    ]
+}

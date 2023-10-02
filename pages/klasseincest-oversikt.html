@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CER Site - Mine Prosjekter</title>
+        <title>Incest Oversikt</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
         <link rel="stylesheet" type="text/css" href="../style.css">
@@ -15,7 +15,7 @@
             <p class="browsehappy" lang="en">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         </div>
-        <nav class="navbar">
+        <nav class="navbar"><!-- Navigasjons linjen, bare at d e fra dei fleste sidene, må endre om man skal se på hoved siden. -->
             <a href="../index.html" class="navbar_logo">CER</a><!--Bytt ut med logo senere-->
             <ul id="navbar_hover" class="navbar_links">
                 <li class="navbar_item"><a href="../index.html">Hjem</a></li>
@@ -26,16 +26,26 @@
             </ul>
         </nav>
         <div class="header">
-            <h1>Prosjekter</h1>
+            <h1>TITTEL</h1>
         </div>
 
 
         <div class="content">
-            <p>INNHOLD HER</p>
-            <div>
-                <h1 class="subtitle">Klasse Incest Oversikt</h1>
-                <a href="./klasseincest-oversikt.html">Klasse Incest Oversikt</a>
-            </div>
+            <script src="https://unpkg.com/force-graph"></script>
+            <div id="graph"></div>
+                <script>
+                    fetch('./klasseincest.json').then(res => res.json()).then(data => {
+                      const Graph = ForceGraph()
+                      (document.getElementById('graph'))
+                        .graphData(data)
+                        .nodeId('id')
+                        .nodeVal('val')
+                        .nodeLabel('name')
+                        .nodeAutoColorBy('group')
+                        .linkSource('from')
+                        .linkTarget('to')
+                    });
+            </script>
         </div>
         <script type="text/javascript" src="../main.js" async defer></script>
 
