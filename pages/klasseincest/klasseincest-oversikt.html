@@ -35,7 +35,6 @@
             <div id="graph"></div><!-- https://github.com/vasturiano/force-graph -->
                 <script>
                     fetch('./klasseincest.json').then(res => res.json()).then(data => {
-                    // for each time an id is mentioned in source or target, add 1 to the corresponding node's value stored in thier "connections" 
 
                     data.nodes.forEach(node => {
                         node.connections = 0;
@@ -45,6 +44,17 @@
                             }
                         });
                     });
+                    // add random links between nodes
+                    for (let i = 0; i < 100; i++) {
+                        const source = Math.floor(Math.random() * (data.nodes.length-1));
+                        const target = Math.floor(Math.random() * (data.nodes.length-1));
+                        if (source != target) {
+                            data.links.push({
+                                source: source,
+                                target: target
+                            });
+                        }
+                    }
                     const Graph = ForceGraph()
                     (document.getElementById('graph'))
                         .height(window.innerHeight*0.8)
