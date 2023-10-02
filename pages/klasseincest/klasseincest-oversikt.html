@@ -47,6 +47,8 @@
                     });
                     const Graph = ForceGraph()
                     (document.getElementById('graph'))
+                        .width(window.innerWidth/2)
+                        .height(window.innerHeight/2)
                         .graphData(data)
                         .nodeId('id')
                         .nodeVal('val')
@@ -79,26 +81,6 @@
                         });
                     });
                     Graph.onEngineStop(() => Graph.zoomToFit(400));
-                    Graph.cooldownTime(Infinity)
-                        .d3AlphaDecay(0)
-                        .d3VelocityDecay(0)
-
-      // Deactivate existing forces
-                        .d3Force('center', null)
-                        .d3Force('charge', null)
-
-      // Add collision and bounding box forces
-                        .d3Force('collide', d3.forceCollide(Graph.nodeRelSize()))
-                        .d3Force('box', () => {
-                            const SQUARE_HALF_SIDE = Graph.nodeRelSize() * N * 0.5;
-
-                                nodes.forEach(node => {
-                                    const x = node.x || 0, y = node.y || 0;
-
-                                    if (Math.abs(x) > SQUARE_HALF_SIDE) { node.vx *= -1; }
-                                    if (Math.abs(y) > SQUARE_HALF_SIDE) { node.vy *= -1; }
-                        });
-                    })
             </script>
         </div>
         <div>
