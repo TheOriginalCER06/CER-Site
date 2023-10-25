@@ -42,7 +42,7 @@ h1 { /* tag */
 }
 p { /* tag */
     color: var(--text2);
-    font-size: 20px;
+    font-size: 1.15em;
     font-weight: bold;
     text-align: center;
     margin: 0px;
@@ -122,8 +122,11 @@ nav {
     width: 100%;
     padding-left: 30px;
     padding-right: 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .oppgave_link { /* list items at center of screen */
@@ -160,11 +163,11 @@ nav {
     color:  var(--text1);
   }
 
-#navbar_hover li a:hover{
+.navbar_item a:hover{
     color: var(--bg);
     text-decoration: none;
   }
-#navbar_hover li:hover{
+.navbar_item:hover{
     background-color: var(--text1);
     text-decoration: none;
   }
