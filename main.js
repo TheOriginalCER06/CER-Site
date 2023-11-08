@@ -1,5 +1,3 @@
-// Desc: Main javascript file for the website
-
 //local ip addresse, kjekt for å koble opp til server senere
 let ip_pos = document.getElementById('ip');
 if (ip_pos != null) {
