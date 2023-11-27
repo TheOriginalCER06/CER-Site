@@ -5,6 +5,8 @@ I've made some cool projects and I want to share them with the world. I'm also l
 
 I also use it for school projects, so I can share them with my classmates and teachers.
 
+(Btw, I had a GitHub Pages active, but due to some functions only working on apache servers, I don't know how to make github host that, so currently, clone to own Apache server for it to work 😁 )
+
 ## How to use
 You can use this website for whatever you want, but please give me credit if you use my code. I've worked hard on this and I want to be recognized for it.
 
