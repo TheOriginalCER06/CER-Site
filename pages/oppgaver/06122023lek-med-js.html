@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kalkulator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <style>
+            .kalkulator {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .kalkulator button {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                border-radius: 5px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                font-size: 20px;
+            }
+            .kalkulator button:hover {
+                background-color: #3e8e41;
+            }
+            .kalkulator input {
+                width: 100px;
+                height: 50px;
+                margin: 5px;
+                border-radius: 5px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                font-size: 20px;
+            }
+            .kalkulator #calc {
+                width: 100px;
+                height: 50px;
+                margin: 5px;
+                border-radius: 5px;
+            }
+            .kalkulator #calc:active {
+                background-color: red;
+            }
+            .kalkulator #output {
+                width: 100px;
+                height: 50px;
+                margin: 5px;
+                border-radius: 5px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="background">
+        <!--[if lt IE 7]>
+            <p class="browsehappy" lang="en">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        </div>
+        <nav class="navbar"><!-- Navigasjons linjen, bare at d e fra dei fleste sidene, må endre om man skal se på hoved siden. -->
+            <a href="../../index.html" class="navbar_logo">CER</a><!--Bytt ut med logo senere-->
+            <ul  class="navbar_links">
+                <li class="navbar_item"><a href="../../index.html">Hjem</a></li>
+                <li class="navbar_item"><a href="../om.html">Om</a></li>
+                <li class="navbar_item"><a href="../kontakt.html">Kontakt</a></li>
+                <li class="navbar_item"><a href="../prosjekter.html">Prosjekter</a></li>
+                <li class="navbar_item"><a href="../oppgaver.html">Oppgaver</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <h1>Kalkulator</h1>
+        </div>
+
+
+        <div class="content">
+            <p>Jeg kjedet meg og lagde en kalkulator</p>
+        </div>
+
+        <div class="oppgave" style="background-color: white; margin: 2%;">
+            <h1>Kalkulator</h1>
+            <output id="output">Her kommer svaret</output>
+            <div class="kalkulator">
+                <div>
+                    <input type="number" id="tall1" placeholder="Tall 1">
+                    <input type="number" id="tall2" placeholder="Tall 2">
+                </div>
+                <div>
+                    <button id="pluss">+</button>
+                    <button id="minus">-</button>
+                    <button id="gange">*</button>
+                    <button id="dele">/</button>
+                    <button id="potens">^</button>
+                    <button id="rot">√</button>
+                </div>
+                <button id="calc">Regn ut</button>
+            </div>
+        </div>
+            
+        <script src="../../main.js" async defer></script>
+        <script src="./06122023lek-med-js.js" async defer></script>
+
+    </body>
+</html>
