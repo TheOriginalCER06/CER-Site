@@ -5,9 +5,11 @@ if (ip_pos != null) {
 }
 
 //Klokken
+tid = new Date();
 let clock_pos = document.getElementById('clock');
 if (clock_pos != null) {
     var timer = setInterval(function() {
-        clock_pos.innerHTML = new Date().toLocaleTimeString();
+        clock_pos.innerHTML = tid.toLocaleTimeString()  ;
+        tid.setSeconds(tid.getSeconds() + 1);
     }, 1000);
 }
